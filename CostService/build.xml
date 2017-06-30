@@ -1,0 +1,24 @@
+<project basedir="." name="CostService">  
+ 
+	<target name="wsimport-help" description="wsimport Help">
+	    <exec executable="wsimport">
+	    	<arg value="-help"/>
+		</exec>
+	</target> 
+	
+	<target name="wsimport" description="Process WSDL">
+		<echo message="Retrieving CostService.wsdl" />
+	    <exec executable="wsimport">
+	    	<arg value="-p"/>
+	    	<arg value="com.trivera.costservice.generated"/>
+	    	<arg value="-keep"/>
+	    	<arg value="-s"/>
+	    	<arg value="src"/>
+	    	<arg value="-d"/>
+	    	<arg value="build/classes"/>
+	    	<arg value="-Xdebug"/>
+	    	<arg value="config/CostService.wsdl"/>
+		</exec>
+	</target>
+	
+</project>

@@ -1,0 +1,40 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from CustomerSOAPServiceService WSDL service -->
+
+  <service name="CustomerSOAPService" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://service.trivera"/>
+      <parameter name="wsdlServiceElement" value="CustomerSOAPServiceService"/>
+      <parameter name="schemaQualified" value="http://service.trivera,http://model.trivera"/>
+      <parameter name="wsdlServicePort" value="CustomerSOAPService"/>
+      <parameter name="className" value="trivera.service.CustomerSOAPServiceSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="CustomerSOAPService"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="saveCustomer" qname="operNS:saveCustomer" xmlns:operNS="http://service.trivera" returnQName="retNS:saveCustomerReturn" xmlns:retNS="http://service.trivera" returnType="rtns:Customer" xmlns:rtns="http://model.trivera" soapAction="" >
+        <parameter qname="pns:c" xmlns:pns="http://service.trivera" type="tns:Customer" xmlns:tns="http://model.trivera"/>
+      </operation>
+      <operation name="findByCustomerId" qname="operNS:findByCustomerId" xmlns:operNS="http://service.trivera" returnQName="retNS:findByCustomerIdReturn" xmlns:retNS="http://service.trivera" returnType="rtns:Customer" xmlns:rtns="http://model.trivera" soapAction="" >
+        <parameter qname="pns:customerId" xmlns:pns="http://service.trivera" type="tns:long" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="saveCustomer findByCustomerId"/>
+
+      <typeMapping
+        xmlns:ns="http://model.trivera"
+        qname="ns:Customer"
+        type="java:trivera.model.Customer"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

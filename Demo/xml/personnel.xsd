@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="CITY" type="xs:string"/>
+  <xs:element name="E_MAIL_ADDRESS" type="xs:string"/>
+  <xs:element name="FUNCTION" type="xs:string"/>
+  <xs:complexType name="HOME_ADDRESSType">
+    <xs:sequence>
+      <xs:element ref="STREET_AND_NR"/>
+      <xs:element ref="ZIP_CODE"/>
+      <xs:element ref="CITY"/>
+      <xs:element ref="PHONE_PRIVATE"/>
+      <xs:element ref="MOBILE"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LOGIN" type="xs:string"/>
+  <xs:element name="MOBILE" type="xs:string"/>
+  <xs:complexType name="PERSONType">
+    <xs:sequence>
+      <xs:element ref="FUNCTION"/>
+      <xs:element ref="ROOMNR"/>
+      <xs:element ref="WORKPHONE1"/>
+      <xs:element ref="WORKPHONE2"/>
+      <xs:element ref="E_MAIL_ADDRESS"/>
+      <xs:element ref="LOGIN"/>
+      <xs:element name="HOME_ADDRESS" type="HOME_ADDRESSType"/>
+    </xs:sequence>
+    <xs:attribute name="SURNAME" type="xs:string" use="required"/>
+    <xs:attribute name="GIVENNAME" type="xs:string" use="required"/>
+    <xs:attribute name="OFFICIAL_NAME" type="xs:string" use="required"/>
+  </xs:complexType>
+  <xs:element name="PHONE_PRIVATE" type="xs:string"/>
+  <xs:element name="ROOMNR" type="xs:string"/>
+  <xs:element name="STREET_AND_NR" type="xs:string"/>
+  <xs:element name="WORKPHONE1" type="xs:short"/>
+  <xs:element name="WORKPHONE2" type="xs:short"/>
+  <xs:element name="ZIP_CODE" type="xs:string"/>
+  <xs:element name="Personnel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PERSON" type="PERSONType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>  
+
+<Personnel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="personnel.xsd">
+  
+  <PERSON SURNAME="Bolhuis" GIVENNAME="Thijs" OFFICIAL_NAME="ing.T.Bolhuis">
+    <FUNCTION>Senior Engineer</FUNCTION>
+    <ROOMNR>EL/TN 1000</ROOMNR>
+    <WORKPHONE1>3000</WORKPHONE1>
+    <WORKPHONE2>2000</WORKPHONE2>
+    <E_MAIL_ADDRESS>T.Bolhuis@el.utwente.nl</E_MAIL_ADDRESS>
+    <LOGIN>tb</LOGIN>
+    <HOME_ADDRESS>
+      <STREET_AND_NR>LOSTstraat 1001</STREET_AND_NR>
+      <ZIP_CODE>7500AE</ZIP_CODE>
+      <CITY>Enchede</CITY>
+      <PHONE_PRIVATE>x31-531001000</PHONE_PRIVATE>
+      <MOBILE>0610001000</MOBILE>
+    </HOME_ADDRESS>
+  </PERSON>
+  <PERSON SURNAME="Lodder" GIVENNAME="Joe" OFFICIAL_NAME="prof. dr. J.C. Lodder">
+    <FUNCTION>Professor</FUNCTION>
+    <ROOMNR>EL/TN 3000</ROOMNR>
+    <WORKPHONE1>4000</WORKPHONE1>
+    <WORKPHONE2>5000</WORKPHONE2>
+    <E_MAIL_ADDRESS>J.C.Lodder@el.utwente.nl</E_MAIL_ADDRESS>
+    <LOGIN>JCL</LOGIN>
+    <HOME_ADDRESS>
+      <STREET_AND_NR>OpenGlaan 100</STREET_AND_NR>
+      <ZIP_CODE>7500 AE</ZIP_CODE>
+      <CITY>Enschede</CITY>
+      <PHONE_PRIVATE/>
+      <MOBILE/>
+    </HOME_ADDRESS>
+  </PERSON>
+  <PERSON SURNAME="Pasop" GIVENNAME="Jos" OFFICIAL_NAME="ing. J.R. Pasop">
+    <FUNCTION>Engineer</FUNCTION>
+    <ROOMNR>EL/TN 8000</ROOMNR>
+    <WORKPHONE1>9000</WORKPHONE1>
+    <WORKPHONE2>7000</WORKPHONE2>
+    <E_MAIL_ADDRESS>J.R.Pasop@el.utwente.nl</E_MAIL_ADDRESS>
+    <LOGIN>pasop</LOGIN>
+    <HOME_ADDRESS>
+      <STREET_AND_NR>Schemastr 6</STREET_AND_NR>
+      <ZIP_CODE/>
+      <CITY>Hengelo</CITY>
+      <PHONE_PRIVATE/>
+      <MOBILE>06-20002000</MOBILE>
+    </HOME_ADDRESS>
+  </PERSON>
+</Personnel>

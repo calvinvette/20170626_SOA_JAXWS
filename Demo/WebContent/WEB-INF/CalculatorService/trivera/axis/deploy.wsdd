@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from CalculatorService WSDL service -->
+
+  <service name="Calculator" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://axis.trivera"/>
+      <parameter name="wsdlServiceElement" value="CalculatorService"/>
+      <parameter name="schemaQualified" value="http://axis.trivera"/>
+      <parameter name="wsdlServicePort" value="Calculator"/>
+      <parameter name="className" value="trivera.axis.Calculator"/>
+      <parameter name="wsdlPortType" value="Calculator"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://axis.trivera" xmlns:retNS="http://axis.trivera" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="add" qname="operNS:add" returnQName="retNS:addReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://axis.trivera" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:i1" type="tns:int"/>
+        <parameter xmlns:pns="http://axis.trivera" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:i2" type="tns:int"/>
+      </operation>
+      <operation xmlns:operNS="http://axis.trivera" xmlns:retNS="http://axis.trivera" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="subtract" qname="operNS:subtract" returnQName="retNS:subtractReturn" returnType="rtns:int" soapAction="">
+        <parameter xmlns:pns="http://axis.trivera" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:i1" type="tns:int"/>
+        <parameter xmlns:pns="http://axis.trivera" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:i2" type="tns:int"/>
+      </operation>
+      <operation xmlns:operNS="http://axis.trivera" xmlns:retNS="http://axis.trivera" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="fahrenheitToCelsius" qname="operNS:fahrenheitToCelsius" returnQName="retNS:fahrenheitToCelsiusReturn" returnType="rtns:float" soapAction="">
+        <parameter xmlns:pns="http://axis.trivera" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:degreesFahrenheit" type="tns:float"/>
+      </operation>
+      <parameter name="allowedMethods" value="add fahrenheitToCelsius subtract"/>
+
+  </service>
+</deployment>

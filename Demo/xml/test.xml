@@ -1,0 +1,17 @@
+<?xml version="1.0"?>  
+<!--
+     File:       bottles.xml
+     Purpose:    XSL Version of 99 Bottles of Beer
+     Desc:       XML file used to define parameter constants
+-->
+
+<?xml-stylesheet type="text/xsl" href="bottles.xsl"?>  
+<bottles>
+   <quantity>99</quantity>
+   <container-plural>bottles</container-plural>
+   <container-singular>bottle</container-singular>
+   <item>beer</item>
+   <location>on the wall</location>
+   <retrieve>You take one down</retrieve>
+   <distribute>pass it around</distribute>
+</bottles>

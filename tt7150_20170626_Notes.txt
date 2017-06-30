@@ -1,0 +1,328 @@
+Calvin Vette, RCHE, JCEA, CSM, ...
+calvin.vette@triveratech.com
++1 248-894-4913 text
+
+First Name
+Title/Project(what you actually do)
+Experience (programming/admin/db admin/arch/pm)
+Why are you in SOA/JEE Services
+Expectations
+
+
+
+Monday, Wednesday-Friday
+7am-3pm Pacific / 10am-6pm Eastern
+8:30am - quick break
+10am-11am - lunch
+12:30pm - quick break
+3pm - end for the day
+
+Tuesday only - same, but minor adjustments:
+8am-9am - Quick break and lab
+11am-12am - Lunch and lab around this time
+
+Send chat message to the Calvin that is "Host" (not the phone Icon)
+
+ESB != EJB
+	But JEE-based ESBs like WildFly, WebSphere are often
+	implemented using EJBs under the hood
+
+	Microsoft BizTalk uses MS.NET/DCOM components under the
+	hood
+
+	There are Python-based ESBs, NodeJS-based ESBs, and
+	many other languages as well.
+
+
+Governance
+SLA - Service Level Agreement
+KPI - Key Performance Indicators
+AuthN - Authentication
+AuthZ - Authorization 
+Accounting
+
+
+TOGAF - The Open Group Architectural Framework
+	Stages A-H
+	No tech until about stage E
+
+Scrum - Agile - Ceremonies push business-need first
+	Tech isn't discussed until about half-way through
+	
+
+
+First Lab:
+	HR "Onboarding" application
+	Assume the interviews are done and that an offer has
+	been extended to a new job candidate.
+
+	What does the HR team need to do business-wise to manage
+	bringing the new employee on? 
+
+	Employee ID, email, phone, desk, etc.
+
+	HR's needs before "Day 1" and on "Day 1" of a new
+	employee.
+
+
+	First 15 minutes or so:
+	Come up with the things you need to have.
+	Very high-level
+	Do it in Notepad or a simple text editor.
+
+	Second 15 minutes or so:
+	Detail the things/services/steps
+		Mark basic chronology (don't go in-depth)
+		Which can be done in parallel?
+		Check for completeness for employee's first-day
+			experience.
+		Use your own experiences as a guide.
+
+	We'll discuss together about 9:50P/12:50E.
+
+John:
+Security
+	Background Checks
+		3rd Party Service(s)
+		Employee (Security) Storage Service
+			Background Check Services
+	Finger Printing
+		Employee (Security) Storage Service
+			Finger Printing Results	
+	Pictures
+		Employee (Security) Storage Service
+			Picture Storage
+	Security Badge
+		Card Printing Service
+
+
+General
+	Healthcare
+		General Employee Information Service
+	Dental
+		General Employee Information Service
+	Vision
+		General Employee Information Service
+
+	401k
+		General Employee Information Service
+		Payroll Service
+
+	Cubicle assignment
+
+	Phone allocation
+	Phone Number / Ext assignment
+
+	Payroll Service
+
+
+IT Department
+	UserID/AuthN/AuthZ (security)
+	Additional IDs (Grid ID)
+
+		Random UserID Generation Service
+		Grid Assignment Service
+
+	Desktop/Laptop installation
+		Help Desk/Support
+
+	Allocate Machine (manager approval)
+
+
+Huilan:
+	New Employee Tutorial
+
+CV:
+	BYOD - iPhone/Android device
+
+
+
+Enterprise Integration Patterns
+	Data Enrichment
+
+
+
+
+
+Lunch + Lab 2 until 1pm Pacific/4pm Eastern.
+
+I'll be here most of the time, just muted.
+Feel free to shout out any questions or put them in the chat log
+
+I'll have to take a quick 25 minute break for lunch at some point
+where I may not be available - just put your questions in the chat 
+log and I'll answer them when I get back.
+
+
+
+
+
+Kaizen - Continuous Improvement
+
+	Toyota Way / Edwards Demmings
+
+
+
+Lab 4 + break until 9:10
+
+
+
+Exercise 5 & Exercise 6 & Lunch until 12:10 Pacific.
+Audio & Chat are open for questions - but I'm muted so give me a sec to answer verbally.
+
+
+
+Enterprise Service Bus:
+	Central point of contact
+	Universal Translate
+		Translates Protocols, Data Formats, 
+			VB Client (talks to ESB w/ DCOM/ActiveX)	Python or NodeJS Script
+									(ESB via REST/http w/ JSON)
+							ESB
+			CICS (mq)	Vax (Telnet)	OracleDB	Remote SOAP (http)
+					-> JEE (RMI)
+ 	Adds in BPMN/BPEL execution (Orchestration/Choreography)
+		Deploying/Registration of services; multiple version support; End-of-Life
+		service versioning policies
+		Possibly approval process flows for deployment to production
+	KPI Logging
+	Security (AuthN/AuthZ/Accounting)
+	
+
+Quick break until 1:20 pacific.
+
+
+
+Exercise 7 until 7:10am Pacific tomorrow.
+
+
+Break + Ex 8 + Ex 9 until 10:15 Pacific / 1:15 Eastern.
+
+
+http://springsource.org/xsd/spring-core
+	http://springsource.org/xsd/spring-core/spring-core.xsd
+
+http://springsource.org/xsd/spring-core/4.0
+	http://springsource.org/xsd/spring-core/4.0/spring-core.xsd
+
+http://springsource.org/xsd/spring-core/4.1
+	http://springsource.org/xsd/spring-core/4.1/spring-core.xsd
+
+
+
+
+<?xml version="1.0"?>
+<customer xmlns="http://weasley.com/xsd/customer" xmlns:sas="http://sas.com/datatypes/order">
+	<sas:order>
+		<sas:customer>...</sas:customer> <!-- sas customer -->
+		<sas:address>...</sas:address>
+		<sas:account>...</sas:account>
+	</sas:order>
+</customer>
+
+
+Lunch + Ex 10 until 1:10P / 4:10E
+(1 hour 45 minutes)
+
+
+
+Exercise 11 until end of day
+We'll debrief first thing tomorrow morning
+7am Pacific
+
+
+Break + Lab 12 until 9am P / 12 E
+
+
+REST uses all aspects of HTTP protocol, especially "CRUD" functionality
+
+	POST - Create
+	GET - Read
+	PUT - Update
+	DELETE - Delete
+
+Use all the methods (verbs)
+Consistent URLs (URL is the endpoint for a service)
+
+	http://weasley.com/rest/customers -- refers to all customers (Entity endpoint)
+	GET http://weasley.com/rest/customers - retrieve all customers
+	POST http://weasley.com/rest/customers - add to the list of all customers
+	PUT http://weasley.com/rest/customers - update/modify all customers
+	DELETE http://weasley.com/rest/customers - delete all customers
+
+	http://weasley.com/rest/customers/1234 - refers to customer with customerId 1234 (Harry Potter record)
+	GET http://weasley.com/rest/customers/1234 - retrieve Harry's record
+	POST http://weasley.com/rest/customers/1234 - insert a record with that ID
+	PUT http://weasley.com/rest/customers/1234 - modify record with that ID
+	DELETE http://weasley.com/rest/customers/1234 - delete record with that ID
+
+	http://weasley.com/rest/customers/lastName/Weasley - refers to all Weasley customers
+	GET http://weasley.com/rest/customers/lastName/Weasley - retrieve all Weasley customers
+	POST http://weasley.com/rest/customers/lastName/Weasley - add another Weasley
+	PUT http://weasley.com/rest/customers/lastName/Weasley - modify all Weasleys
+	DELETE http://weasley.com/rest/customers/lastName/Weasley - delete all Weasleys
+
+	http://weasley.com/rest/customers/lastName/Weasley/firstName/Ginny - refers to all 
+		customers with last name of Weasley and firstName Ginny
+	GET http://weasley.com/rest/customers/lastName/Weasley/firstName/Ginny - find Ginny Weasley
+
+
+	Business Process:
+	http://weasley.com/rest/checkOrderStatus/9391 - references the order status for orderId 9391
+	GET http://weasley.com/rest/checkOrderStatus/9391 - retrieve status for order with ID#9391
+	POST http://weasley.com/rest/checkOrderStatus/9391 - start a new status
+	PUT http://weasley.com/rest/checkOrderStatus/9391 - modify status
+	DELETE http://weasley.com/rest/checkOrderStatus/9391 - 
+
+	http://weasley.com/rest/checkOut/
+	GET - find the current state of the checkout process
+	POST - start checkout anew (convert a shopping cart into an order-in-progress)
+	PUT - modify checkout process (as in every screen of a checkout process)
+	DELETE - cancel checkout (put the order-in-progress back into the shopping cart)
+
+Data types are "Content Negotiation" (ConNeg)
+
+	Client requests a specific data format type
+	XML, JSON
+	JSON is most popular due to mobile impact
+
+	var customers = JSON.parse(jsonString);
+
+	Converters are available for most products, like CSV/TAB, Excel, ODS, etc.
+
+	HTTP "Accept" Header is used by the client to give a list of ordered preferences of data type
+
+		Accept: application/json, application/xml, text/xml, text/plain, ...
+
+	In Java, JAXB converts beans to and from XML. 
+		Jackson or Jettison libraries support JSON using the JAXB annotations.
+
+
+Exercise 13 + Lunch until 11:40 P / 2:40 E
+
+
+java com.triveratech.training.xml.rest.RESTClient http://www.nextgeneducation.com/weasley/customers.json
+
+Exerise 14 until 12:45P/3:45E - I'm not too concerned with the WSIL files.
+
+Break + Exercise 15 until end of day. 
+We'll debrief first thing in the morning.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

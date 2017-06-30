@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<SOAP:Envelope xmlns="http://www.irs.gov/efile" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/" 
+xmlns:efile="http://www.irs.gov/efile" >
+  <SOAP:Body>
+    <efile:AcknowledgementActionZ>
+      <Acknowledgement>
+        <AcknowledgementId>A</AcknowledgementId>
+        <AcknowledgementTimestamp>2001-12-17T09:30:47-05:00</AcknowledgementTimestamp>
+        <TransmissionAcknowledgement>
+          <TransmissionId>A</TransmissionId>
+          <TransmissionTimestamp>2001-12-17T09:30:47-05:00</TransmissionTimestamp>
+          <TransmissionStatus>R</TransmissionStatus>
+          <Errors errorCount="2">
+            <Error errorId="1">
+              <DocumentId>A</DocumentId>
+              <DocumentName>String</DocumentName>
+              <DocumentOccurrence>2</DocumentOccurrence>
+              <ElementName>Name</ElementName>
+              <ElementOccurrence>2</ElementOccurrence>
+              <ErrorCode>String</ErrorCode>
+              <ErrorMessage>String</ErrorMessage>
+            </Error>
+            <Error errorId="2">
+              <DocumentId>A</DocumentId>
+              <DocumentName>String</DocumentName>
+              <DocumentOccurrence>2</DocumentOccurrence>
+              <ElementName>Name</ElementName>
+              <ElementOccurrence>2</ElementOccurrence>
+              <ErrorCode>String</ErrorCode>
+              <ErrorMessage>String</ErrorMessage>
+            </Error>
+          </Errors>
+          <OriginAcknowledgement>
+            <OriginId>A</OriginId>
+            <OriginTimestamp>2001-12-17T09:30:47-05:00</OriginTimestamp>
+            <OriginStatus>R</OriginStatus>
+            <Errors errorCount="2">
+              <Error errorId="1">
+                <DocumentId>A</DocumentId>
+                <DocumentName>String</DocumentName>
+                <DocumentOccurrence>2</DocumentOccurrence>
+                <ElementName>Name</ElementName>
+                <ElementOccurrence>2</ElementOccurrence>
+                <ErrorCode>String</ErrorCode>
+                <ErrorMessage>String</ErrorMessage>
+              </Error>
+              <Error errorId="2">
+                <DocumentId>A</DocumentId>
+                <DocumentName>String</DocumentName>
+                <DocumentOccurrence>2</DocumentOccurrence>
+                <ElementName>Name</ElementName>
+                <ElementOccurrence>2</ElementOccurrence>
+                <ErrorCode>String</ErrorCode>
+                <ErrorMessage>String</ErrorMessage>
+              </Error>
+            </Errors>
+            <ItemAcknowledgement>
+              <ItemId>A</ItemId>
+              <ItemStatus>R</ItemStatus>
+              <PaymentIndicator>Payment Request Received</PaymentIndicator>
+              <Errors errorCount="2">
+                <Error errorId="1">
+                  <DocumentId>A</DocumentId>
+                  <DocumentName>String</DocumentName>
+                  <DocumentOccurrence>2</DocumentOccurrence>
+                  <ElementName>Name</ElementName>
+                  <ElementOccurrence>2</ElementOccurrence>
+                  <ErrorCode>String</ErrorCode>
+                  <ErrorMessage>String</ErrorMessage>
+                </Error>
+                <Error errorId="2">
+                  <DocumentId>A</DocumentId>
+                  <DocumentName>String</DocumentName>
+                  <DocumentOccurrence>2</DocumentOccurrence>
+                  <ElementName>Name</ElementName>
+                  <ElementOccurrence>2</ElementOccurrence>
+                  <ErrorCode>String</ErrorCode>
+                  <ErrorMessage>String</ErrorMessage>
+                </Error>
+              </Errors>
+            </ItemAcknowledgement>
+            <ItemAcknowledgement>
+              <ItemId>A</ItemId>
+              <ItemStatus>R</ItemStatus>
+              <PaymentIndicator>Payment Request Received</PaymentIndicator>
+              <Errors errorCount="2">
+                <Error errorId="1">
+                  <DocumentId>A</DocumentId>
+                  <DocumentName>String</DocumentName>
+                  <DocumentOccurrence>2</DocumentOccurrence>
+                  <ElementName>Name</ElementName>
+                  <ElementOccurrence>2</ElementOccurrence>
+                  <ErrorCode>String</ErrorCode>
+                  <ErrorMessage>String</ErrorMessage>
+                </Error>
+                <Error errorId="2">
+                  <DocumentId>A</DocumentId>
+                  <DocumentName>String</DocumentName>
+                  <DocumentOccurrence>2</DocumentOccurrence>
+                  <ElementName>Name</ElementName>
+                  <ElementOccurrence>2</ElementOccurrence>
+                  <ErrorCode>String</ErrorCode>
+                  <ErrorMessage>String</ErrorMessage>
+                </Error>
+              </Errors>
+            </ItemAcknowledgement>
+          </OriginAcknowledgement>
+          <OriginAcknowledgement>
+            <OriginId>A</OriginId>
+            <OriginTimestamp>2001-12-17T09:30:47-05:00</OriginTimestamp>
+            <OriginStatus>R</OriginStatus>
+            <Errors errorCount="2">
+              <Error errorId="1">
+                <DocumentId>A</DocumentId>
+                <DocumentName>String</DocumentName>
+                <DocumentOccurrence>2</DocumentOccurrence>
+                <ElementName>Name</ElementName>
+                <ElementOccurrence>2</ElementOccurrence>
+                <ErrorCode>String</ErrorCode>
+                <ErrorMessage>String</ErrorMessage>
+              </Error>
+              <Error errorId="2">
+                <DocumentId>A</DocumentId>
+                <DocumentName>String</DocumentName>
+                <DocumentOccurrence>2</DocumentOccurrence>
+                <ElementName>Name</ElementName>
+                <ElementOccurrence>2</ElementOccurrence>
+                <ErrorCode>String</ErrorCode>
+                <ErrorMessage>String</ErrorMessage>
+              </Error>
+            </Errors>
+            <ItemAcknowledgement>
+              <ItemId>A</ItemId>
+              <ItemStatus>R</ItemStatus>
+              <PaymentIndicator>Payment Request Received</PaymentIndicator>
+              <Errors errorCount="2">
+                <Error errorId="1">
+                  <DocumentId>A</DocumentId>
+                  <DocumentName>String</DocumentName>
+                  <DocumentOccurrence>2</DocumentOccurrence>
+                  <ElementName>Name</ElementName>
+                  <ElementOccurrence>2</ElementOccurrence>
+                  <ErrorCode>String</ErrorCode>
+                  <ErrorMessage>String</ErrorMessage>
+                </Error>
+                <Error errorId="2">
+                  <DocumentId>A</DocumentId>
+                  <DocumentName>String</DocumentName>
+                  <DocumentOccurrence>2</DocumentOccurrence>
+                  <ElementName>Name</ElementName>
+                  <ElementOccurrence>2</ElementOccurrence>
+                  <ErrorCode>String</ErrorCode>
+                  <ErrorMessage>String</ErrorMessage>
+                </Error>
+              </Errors>
+            </ItemAcknowledgement>
+            <ItemAcknowledgement>
+              <ItemId>A</ItemId>
+              <ItemStatus>R</ItemStatus>
+              <PaymentIndicator>Payment Request Received</PaymentIndicator>
+              <Errors errorCount="2">
+                <Error errorId="1">
+                  <DocumentId>A</DocumentId>
+                  <DocumentName>String</DocumentName>
+                  <DocumentOccurrence>2</DocumentOccurrence>
+                  <ElementName>Name</ElementName>
+                  <ElementOccurrence>2</ElementOccurrence>
+                  <ErrorCode>String</ErrorCode>
+                  <ErrorMessage>String</ErrorMessage>
+                </Error>
+                <Error errorId="2">
+                  <DocumentId>A</DocumentId>
+                  <DocumentName>String</DocumentName>
+                  <DocumentOccurrence>2</DocumentOccurrence>
+                  <ElementName>Name</ElementName>
+                  <ElementOccurrence>2</ElementOccurrence>
+                  <ErrorCode>String</ErrorCode>
+                  <ErrorMessage>String</ErrorMessage>
+                </Error>
+              </Errors>
+            </ItemAcknowledgement>
+          </OriginAcknowledgement>
+        </TransmissionAcknowledgement>
+      </Acknowledgement>
+    </efile:AcknowledgementActionZ>
+  </SOAP:Body>
+</SOAP:Envelope>

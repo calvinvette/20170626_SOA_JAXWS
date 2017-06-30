@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+	xmlns:tns="http://triveratech.com/CostCalc/" 
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	name="CostService" 
+	targetNamespace="http://triveratech.com/CostCalc/">
+
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://triveratech.com/CostCalc/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="items" type="xsd:float"/>
+      <xsd:element name="cost" type="xsd:float"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CalculateCostResponse">
+    <wsdl:part element="tns:cost" name="cost"/>
+  </wsdl:message>
+  <wsdl:message name="CalculateCostRequest">
+    <wsdl:part element="tns:items" name="items"/>
+  </wsdl:message>
+  <wsdl:portType name="CostService">
+    <wsdl:operation name="CalculateCost">
+      <wsdl:input message="tns:CalculateCostRequest"/>
+      <wsdl:output message="tns:CalculateCostResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CostServiceSOAP" type="tns:CostService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="CalculateCost">
+      <soap:operation soapAction="CalculateCost"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CostService">
+    <wsdl:port binding="tns:CostServiceSOAP" name="CostServiceSOAP">
+      <soap:address location="http://localhost:8080/CostService/cost.ws"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

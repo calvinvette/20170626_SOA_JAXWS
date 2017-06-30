@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- xmlns="http://weasley.com/xsd/20170628/customer" -->
+<customer  customerId="1234">
+	<firstName>Harry</firstName>
+	<lastName>Potter</lastName>
+	<phoneNumber>+44 0206 931-1951</phoneNumber>
+	<email>harry.potter@hogwarts.ac.uk</email>
+	<birthDate>1980-07-31</birthDate>
+</customer>
